@@ -14,17 +14,3 @@ class Pledge
     def self.all
         @@all
     end
-
-    def user
-        @user
-    end
-
-    def project
-        @project
-    end
-
-    def amount
-        @amount
-    end
-
-end

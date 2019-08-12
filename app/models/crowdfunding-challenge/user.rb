@@ -45,8 +45,9 @@ class User
         self.created_projects.count
     end
 
-    def self.highest_pledge
+    def self.highest_pledge #returns the user with the highest pledge
         self.all.max_by{|user| user.projects_backed_count > 0 ? user.highest_pledge_amount : 0}
+        #Pledge.all.max_by{|pledge| pledge.amount}.user
     end 
 
     def self.multi_pledger

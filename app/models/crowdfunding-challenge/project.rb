@@ -28,7 +28,7 @@ class Project
     end
 
     def backers
-        self.pledges.map{|pledge| pledge.user}
+        self.pledges.map{|pledge| pledge.user}.uniq
     end
 
     def backer_count
